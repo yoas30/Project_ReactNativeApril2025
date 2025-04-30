@@ -13,22 +13,28 @@ const Home = () => {
     <ThemeView style={styles.container}>
     <ThemedLogo />
     <Spacer height={20}/>
-      <ThemedText style={styles.title} title= {true} >Home</ThemedText>
+      <ThemedText style={styles.title} title= {true} >
+        The Number 1
+      </ThemedText>
 
       <Spacer height={10}/>
       <ThemedText style={styles.title}>Reading List</ThemedText>
       <Spacer />
 
-      <Link href={'/about'} style={styles.link}>
-        <ThemedText >About Pages</ThemedText>
+      <Link href={'/login'} style={styles.link}>
+        <ThemedText>Login Pages</ThemedText>
       </Link>
-      <Link href={'/contact'} style={styles.link}>
-        <ThemedText>Contact Pages</ThemedText>
+      <Link href={'/register'} style={styles.link}>
+        <ThemedText>Register Pages</ThemedText>
+      </Link>
+      <Link href={'/profile'} style={styles.link}>
+        <ThemedText>Profile Pages</ThemedText>
       </Link>
 
+{/* 
       <View style={styles.card}>
         <Text>Hello , this is card</Text>
-      </View>
+      </View> */}
 
     </ThemeView>
   )
